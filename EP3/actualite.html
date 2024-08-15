@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kind Heart Charity - News</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+</head>
+<body>
+    <nav class="custom-navbar">
+        <div class="logo-wrap">
+            <img src="images/logo.png" class="logo" alt="Kind Heart Charity">
+            <span>
+                Kind Heart Charity
+                <small>Non-profit Organization</small>
+            </span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="actualite.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="donate.html" class="custom-btn">Donate</a></li>
+        </ul>
+    </nav>
+
+    <header class="news-section-header">
+        <h1>Latest News</h1>
+    </header>
+
+    <section class="news-list">
+        <div class="news-item">
+            <a href="images/news1.jpg" data-fancybox="gallery">
+                <img src="images/news1_thumb.jpg" alt="News 1">
+            </a>
+            <h2>News Title 1</h2>
+            <p>Brief description of the news item.</p>
+        </div>
+        <div class="news-item">
+            <a href="images/news2.jpg" data-fancybox="gallery">
+                <img src="images/news2_thumb.jpg" alt="News 2">
+            </a>
+            <h2>News Title 2</h2>
+            <p>Brief description of the news item.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Kind Heart Charity. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {});
+    </script>
+</body>
+</html>
