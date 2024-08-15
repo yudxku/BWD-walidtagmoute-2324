@@ -1,21 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kind Heart Charity - Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MEJ Bénin - Contacte</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation and content goes here -->
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/logo.png" alt="MEJ Bénin Logo">
+            </div>
+            <div class="social-icons">
+                <span>suivez-nous:</span>
+                <a href="https://www.facebook.com/profile.php?id=100084518404105"><img src="images/fb_logo.png" alt="Facebook"></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">accueil</a></li>
+                <li><a href="#">mission</a></li>
+                <li><a href="actualite.html">actualités</a></li>
+                <li><a href="#" class="active">contacte</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="map-section">
-        <h2>Our Location</h2>
-        <div id="map"></div>
+    <section class="contact-info">
+        <h2>Contacte</h2>
+        <p>Mettions crispent embrassa me qu si. Etoffes en je le va arracha ordonne entiere. Ses francine tot non remparts ame emergent.</p>
+        <div class="contact-details">
+            <div class="contact-address">
+                <h3>MEJ Benin</h3>
+                <p><strong>Adresse:</strong> BP 46 Comé Dogbo, Benin</p>
+                <p><strong>Téléphone:</strong> +229 67 06 75 77</p>
+                <p><strong>Email:</strong> <a href="mailto:directionmejb@gmail.com">directionmejb@gmail.com</a></p>
+                <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=123">facebook.com/mej</a></p>
+                <p><strong>Whatsapp:</strong> <a href="https://wa.me/+22967067577">+229 67 06 75 77</a></p>
+            </div>
+            <div id="map" class="contact-map">
+                <!-- Google Maps will be embedded here -->
+            </div>
+        </div>
     </section>
 
-    <footer class="site-footer">
-        <p>&copy; 2024 Kind Heart Charity. All rights reserved.</p>
+    <section class="contact-form-section">
+        <h2>Question, suggestion...?</h2>
+        <form action="#" method="post">
+            <label for="message">Votre question ou suggestion</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="file-upload">Pièces jointes... (optionnel)</label>
+            <input type="file" id="file-upload" name="file-upload">
+
+            <label for="name">Nom *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Prénom *</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="email">Adresse email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Numéro GSM *</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label id="terms">
+                <input type="checkbox" name="terms" required>
+                J'ai lu et accepte les conditions
+            </label>
+
+            <button type="submit">Soumettre</button>
+        </form>
+        <aside class="support-us">
+            <h3>Supportez-nous</h3>
+            <form action="#">
+                <label>Choisissez votre fréquence de don</label>
+                <div class="donation-frequency">
+                    <label><input type="radio" name="frequency" value="once" checked> une fois</label>
+                    <label><input type="radio" name="frequency" value="monthly"> mensuel</label>
+                    <label><input type="radio" name="frequency" value="annual"> annuel</label>
+                </div>
+                <label>Combien voulez-vous donner</label>
+                <div class="donation-amount">
+                    <label><input type="radio" name="amount" value="5">$5</label>
+                    <label><input type="radio" name="amount" value="10" checked>$10</label>
+                    <label><input type="radio" name="amount" value="25">$25</label>
+                    <label><input type="radio" name="amount" value="100">$100</label>
+                </div>
+                <label>Choisissez votre méthode de paiement</label>
+                <div class="payment-method">
+                    <label><input type="radio" name="payment" value="paypal" checked> Paypal</label>
+                    <label><input type="radio" name="payment" value="stripe"> Stripe</label>
+                    <label><input type="radio" name="payment" value="credit-card"> Carte de crédit</label>
+                </div>
+                <button type="submit">donner</button>
+            </form>
+        </aside>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; MEJ Benin - 2024</p>
+            <div class="footer-links">
+                <a href="#">mentions légales et gestion des cookies</a>
+            </div>
+            <div class="footer-social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100084518404105"><img src="images/fb_logo.png" alt="Facebook"></a>
+            </div>
+        </div>
     </footer>
 
     <!-- Include the maps.js file -->
